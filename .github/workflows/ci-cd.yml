@@ -65,7 +65,7 @@ jobs:
     needs: [ RG-Job ]
     steps:
     - name: Download Templates
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: templates_artifact
         path: ${{ runner.temp }}/templates
@@ -83,7 +83,7 @@ jobs:
         template: ${{ runner.temp }}/templates/webapp.bicep
         parameters: location=${{ ENV.AZURE-LOCATION }} appName=${{ env.AZURE-WEBAPP-NAME }}
     - name: Download Publish
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: publish_artifact
         path: ${{ runner.temp }}/publish

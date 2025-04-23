@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 env:
   AZURE_RG: RG3
-  AZURE_SUBSCRIPTION: <<Subscription ID>>
+  AZURE_SUBSCRIPTION: 73ff1195-7f82-4096-9789-25b7e3f5c59c
   AZURE-LOCATION: WestEurope
   AZURE-WEBAPP-NAME: wasimon-0023-mywebapp
 
